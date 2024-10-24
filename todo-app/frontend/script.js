@@ -1,9 +1,9 @@
-// Select the input field, button, and task list
+
 const taskInput = document.getElementById('task-input');
 const addTaskBtn = document.getElementById('add-task-btn');
 const taskList = document.getElementById('task-list');
 
-// Function to add a task
+
 function addTask() {
     const taskText = taskInput.value;
 
@@ -35,7 +35,7 @@ function addTask() {
     taskInput.value = '';
 }
 
-// Function to edit a task
+
 function editTask(taskText, li) {
     const newTaskText = prompt('Edit your task:', taskText);
     if (newTaskText !== null && newTaskText.trim() !== '') {
@@ -43,5 +43,5 @@ function editTask(taskText, li) {
     }
 }
 
-// Add task button event listener
+
 addTaskBtn.addEventListener('click', addTask);
